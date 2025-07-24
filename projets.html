@@ -3,8 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mes Projets</title>
+  <title>Mes Projets | Dorsoumna Nakaina</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .project {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .project img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0077b6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,10 +51,16 @@
     </nav>
   </header>
 
-  <main class="projects">
-    <article>
-      <img src="images/projet1.png" alt="" />
-      <h3>Projet 1</h3>
+  <main>
+    <section class="hero">
+      <h2>Réalisations récentes</h2>
+      <p>Voici quelques projets que j'ai conçus ou auxquels j'ai contribué récemment.</p>
+    </section>
+
+    <section class="projects">
+      <div class="project">
+        <img src="SOUDANIA.PNG.png" alt="Capture SOUDANIA">
+        <h3>SOUDANIA - Alerte pour femmes en danger</h3>
       <p><h2>Description de l'application SOUDANIA</h2>
 <br>SOUDANIA est une application web conçue pour renforcer la sécurité des femmes et des personnes en situation de danger. Elle combine identification de l’utilisateur, géolocalisation en temps réel et système d’alerte rapide à destination des services d’urgence (police et centres de santé les plus proches).
 
@@ -30,12 +68,13 @@ Dès la première utilisation, l'application demande à l'utilisateur de renseig
 
 Lorsqu’un utilisateur se sent en danger, il peut appuyer sur le bouton "Je suis en danger". L’application utilise alors la géolocalisation pour identifier les postes de police et centres de santé les plus proches, à qui elle envoie immédiatement une alerte contenant la position exacte de la personne en détresse.
 
-SOUDANIA se veut simple, rapide et efficace : une solution numérique au service de la sécurité, accessible à tous..</p>
-      <a href="olution.netlify.app" target="_blank">Voir le code</a>
-    </article>
+SOUDANIA se veut simple, rapide et efficace : une solution numérique au service de la sécurité, accessible à tous..</p>.</p>
+        <p><strong>Technologies :</strong> HTML, CSS, JS, API de géolocalisation</p>
+        <a href="https://olution.netlify.app/" target="_blank">Voir le projet</a>
+      </div>
 
-    <article>
-      <img src="images/projet2.png" alt="" />
+      <div class="project">
+        <img src="images/projet2.png" alt="" />
       <h3>Projet 2</h3>
       <p><h2>Description de l’application Zen-Job</h2>
 <br> Zen-Job est une application innovante spécialement conçue pour faciliter l’accès à l’emploi pour les étudiants en quête d’opportunités professionnelles flexibles et adaptées à leur emploi du temps académique.
@@ -47,11 +86,13 @@ L’étudiant peut créer un profil personnalisé, précisant ses compétences, 
 Zen-Job se veut un pont entre les besoins du monde professionnel et les aspirations des jeunes en formation, en leur offrant des opportunités concrètes pour gagner de l’expérience, développer leurs compétences et financer leurs études.
 
 </p>
-      <a href="ratique.netlify.app">Lien GitHub / Démo</a>
+      <a href="https://ratique.netlify.app/">Lien GitHub / Démo</a>
     </article>
 
-    <article>
-      <img src="images/projet3.png" alt="" />
+      </div>
+
+      <div class="project">
+        <img src="TBMT.PNG.png" alt="" />
       <h3>Projet 3</h3>
       <p><h2>Description de la page Tobomtech</h2>
 <br> Tobomtech est une plateforme digitale dédiée à la promotion des technologies, de l’innovation locale et de la transformation numérique au Tchad et en Afrique. Elle a pour mission de vulgariser les outils technologiques, de valoriser les talents digitaux et de soutenir les initiatives entrepreneuriales à fort impact social.
@@ -62,11 +103,12 @@ La page Tobomtech est également un espace de découverte des start-ups locales,
 
 Tobomtech, c’est la tech au service du développement et de l’inclusion.</p>
       <a href="https://www.facebook.com/profile.php?id=61577908937500">Lien GitHub / Démo</a>
-    </article>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 [DORSOUMNA NAKAINA]</p>
+    <p>&copy; 2025 Dorsoumna Nakaina. Tous droits réservés.</p>
   </footer>
 
   <script src="script.js"></script>
