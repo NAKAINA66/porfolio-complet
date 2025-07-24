@@ -6,14 +6,14 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #222264;
+  line-height: 1.8;
+  background: #e8eaeb;
+  color: #101111;
 }
 
 header {
-  background: #2b0b0b;
-  color: white;
+  background: #15a318e2;
+  color: rgba(255, 255, 255, 0.949);
   padding: 1rem;
 }
 
@@ -48,7 +48,7 @@ main {
 .profile-pic {
   width: 150px;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .skills ul {
@@ -62,9 +62,9 @@ main {
 }
 
 .projects article {
-  border: 1px solid #ccc;
+  border: 1px solid lab(96.99% 2 0.7);
   padding: 1rem;
-  background: rgb(219, 213, 213);
+  background: rgb(241, 239, 239);
 }
 
 form {
@@ -82,14 +82,14 @@ form input, form textarea {
 
 button {
   padding: 0.7rem;
-  background: #0d14d8;
+  background: #1619e8;
   color: white;
   border: none;
 }
 
 footer {
   background: #11ed18;
-  color: white;
+  color: rgb(241, 244, 245);
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
