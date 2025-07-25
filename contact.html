@@ -22,20 +22,20 @@
   <main class="contact">
     <form onsubmit="handleSubmit(event)">
       <label for="nom">Nom :</label>
-      <input type="text" id="nom" required />
+      <input type="text" id="nom" name="nom" required />
 
       <label for="email">Email :</label>
-      <input type="email" id="email" required />
+      <input type="email" id="email" name="email" required />
 
       <label for="message">Message :</label>
-      <textarea id="message" rows="5" required></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Envoyer</button>
+      <button type="submit" class="btn-large">Envoyer</button>
     </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 [DORSOUMNA NAKAINA]</p>
+    <p>&copy; 2025 DORSOUMNA NAKAINA</p>
   </footer>
 
   <script src="script.js"></script>
